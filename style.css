@@ -1,0 +1,567 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #F8F8F8;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #F8F8F8;
+    position: relative;
+    padding-top: 0.1px;
+}
+
+#nav {
+    height: 11vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 40px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav h3 {
+    display: none;
+}
+
+#nav h1 {
+    /* background-color: rgb(204, 255, 0); */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monument;
+    font-size: 45px;
+    letter-spacing: -1px;
+    position: relative;
+}
+
+#nav h1::after {
+    content: "©";
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 22px;
+    position: absolute;
+    top: 22%;
+    right: 13%;
+}
+
+#nav h1::before {
+    content: "model management";
+    font-family: gilroy;
+    font-weight: 500;
+    color: #666;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    position: absolute;
+    bottom: 22%;
+    right: 18%;
+}
+
+#nav h2 {
+    /* background-color: rgb(204, 255, 0); */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #000;
+    font-size: 26px;
+    font-weight: 600;
+    /* background-color: red; */
+}
+
+#nav h2:nth-last-child(1) {
+    border-right: 2px solid #00000000;
+}
+
+#nav h2:nth-last-child(2) {
+    width: 29%;
+
+}
+
+#nav h2:nth-last-child(1) {
+    width: 10%;
+
+}
+
+#center {
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding: 3vw 4vw;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    position: relative;
+}
+
+#content video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay {
+    height: 52%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    padding: 3vw;
+    color: #fff;
+
+}
+
+#over1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+#over1 h1 {
+    font-family: monument;
+    font-size: 3.6vw;
+    /* font-weight: 100; */
+
+}
+
+#over1 h2 {
+    font-size: 1vw;
+    padding: 2vw 2.2vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    /* font-weight: 100; */
+    border: 1px solid #fff;
+
+}
+
+#over2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding: 1.5vw 0;
+}
+
+#over2 h4 {
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+#over2 img {
+    height: 3vw;
+}
+
+#scroll {
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    /* padding: 1vw; */
+    white-space: nowrap;
+    /* display: flex; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#container {
+    height: 100%;
+    width: 110%;
+    /* background-color: blue; */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#scroll img {
+    /* display: none; */
+    height: 95%;
+    border-radius: 50%;
+    width: 15%;
+    margin: 1vw;
+    object-fit: cover;
+    object-position: 30% 30%;
+}
+
+@keyframes anime {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#alphabet {
+    height: 11vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+
+
+}
+
+#alphabet h5 {
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    border-bottom: 2px solid #000000;
+    margin-right: 2vw;
+}
+
+#alphabet h6 {
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    /* background-color: rgb(251, 255, 0); */
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #00000000;
+    transition: all ease 0.2s;
+}
+
+#alphabet h6:hover {
+    border: 1px solid #000;
+
+}
+
+#page2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+
+#page2-part1 {
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#page2-part2 {
+    height: 100%;
+    width: 46%;
+}
+
+#page2-part2 img {
+    width: 100%;
+    object-fit: cover;
+    height: 70%;
+}
+
+#page3 {
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding: 5vw 4vw;
+}
+
+#page3>h1 {
+    text-align: center;
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 3vw;
+    /* font-weight: 900; */
+    margin-bottom: 7vh;
+}
+
+.elem {
+    height: 15.5vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+
+    transition: all ease 0.7s;
+
+}
+
+.elem img {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    border-radius: 50%;
+    left: 12%;
+    opacity: 0;
+    object-fit: cover;
+    object-position: top;
+    transition: all ease 0.7s;
+}
+
+.elem h4 {
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 6%;
+    /* background-color: red; */
+}
+
+.elem .elem-part2 {
+    width: 45%;
+    /* background-color: red; */
+}
+
+.elem-part2 h1 {
+    font-size: 2.7vw;
+    font-weight: 500;
+}
+
+.elem-part2 h5 {
+    font-size: 0.8vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.elem:nth-last-child(1) {
+    border-bottom: 2px solid #000;
+
+}
+
+.elem:nth-last-child(1) img {
+    left: 40%;
+}
+
+.elem:nth-last-child(3) img {
+    left: 40%;
+}
+
+.elem:hover img {
+    opacity: 1;
+    left: 24%;
+}
+
+#marque {
+    /* height: 15vh; */
+    width: 100%;
+    /* background-color: red; */
+    padding: 0.8vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+
+}
+
+#marque h1 {
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    letter-spacing: 3px;
+    font-family: monument;
+    /* background-color: blue; */
+    margin-right: 16px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+#footer {
+    height: 100%;
+    width: 100%;
+
+}
+
+@media (max-width:600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #nav {
+        height: 8vh;
+        margin-top: 20px;
+        padding: 0 5vw;
+    }
+
+    #nav h1 {
+        width: 40%;
+        justify-content: flex-start;
+        font-size: 24px;
+    }
+
+    #nav h3 {
+        display: block;
+    }
+
+    #nav h1::after {
+
+        display: none;
+    }
+
+    #nav h1::before {
+        display: none;
+
+    }
+
+    #nav h2 {
+
+        display: none;
+
+    }
+
+
+    #center {
+        height: 40%;
+        width: 100%;
+        /* background-color: red; */
+        position: relative;
+        padding: 3vw 4vw;
+    }
+
+    #content {
+        height: 100%;
+        width: 100%;
+        background-color: blue;
+        position: relative;
+    }
+
+    #content video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #overlay {
+        height:fit-content;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        /* background-color: red; */
+        padding: 3vw;
+        color: #fff;
+
+    }
+
+    #over1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2vw;
+    }
+
+    #over1 h1 {
+        font-family: monument;
+        font-size: 5.5vw;
+        font-weight: 100;
+
+    }
+
+    #over1 h2 {
+        font-size: 2vw;
+        padding: 3vw 3.2vw;
+        /* background-color: blue; */
+        border-radius: 50%;
+        /* font-weight: 100; */
+        border: 1px solid #fff;
+
+    }
+
+    #over2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 2px solid #fff;
+        padding: 1.5vw 0;
+    }
+
+    #over2 h4 {
+        font-size: 3vw;
+        font-weight: 500;
+    }
+
+    #over2 img {
+        height: 5vw;
+    }
+
+    #scroll {
+        height: 20vh;
+        width: 100%;
+        /* background-color: red; */
+        /* padding: 1vw; */
+        white-space: nowrap;
+        /* display: flex; */
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    #container {
+        height: 100%;
+        width: 210%;
+        /* background-color: blue; */
+        display: inline-block;
+        padding: 2vw;
+        animation-name: anime;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+    #scroll img {
+        /* display: none; */
+        height: 95%;
+        border-radius: 50%;
+        width: 15.5%;
+        margin: 1vw;
+        object-fit: cover;
+        object-position: 30% 30%;
+    }
+    
+}
+
